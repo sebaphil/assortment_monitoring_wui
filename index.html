@@ -16,14 +16,14 @@
 </head>
 
 
-<body onload="makeCorsRequest();">
+<body onload="makeCorsRequestForTable('http://localhost:3000/store_assortments', ['sub_family_ids', 'sub_category_ids', 'created_at', 'updated_at', 'id', 'articles_without_price', 'articles_orderable_and_loadable']);">
 
     <div class="jumbotron text-center">
         <h1>Assortment monitoring</h1>
     </div>
     
     <div class="container table-wrapper">
-        <table id="sub-cat-table" class="table table-bordered table-striped">
+        <table id="sub-cat-table" class="table-fixed table table-bordered table-striped">
         </table>
     </div>
 
